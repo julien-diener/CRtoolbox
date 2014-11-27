@@ -1,0 +1,23 @@
+% Define default values for CRTool KLT_tracking
+
+% possible KLT methods are
+%  - 'tracking': track features iteratively along the video
+%  - 'flow':     compute the optical flow (array) for each image of video
+method       = tracking 
+
+% Corner detection
+maxFeature   = 2000     % maximum number of features
+minDist      = 6        % Minimum distance between features
+
+% Particles tracking              
+winSize      = 16       % Diameter of matching window
+pyramid      = 2        % Number of pyramid levels
+maxIteration = [4  6]   % Maximum number of iteration    (per level)
+threshold    = [.5 .1]  % optimization stoping threshold (per level)
+
+\output
+    name = tracking        % name of the output tracking sequence
+    path = KLT             % path where to store computed tracking
+    file = tracking_0001   % file name of the first image of this sequence 
+\end
+

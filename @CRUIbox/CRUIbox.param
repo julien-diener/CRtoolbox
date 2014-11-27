@@ -1,0 +1,33 @@
+% Default parameters for spinbox, sliderbox and popupbox
+% if changed, reset CRDefault with "CRDefault(0)"
+
+\edit
+    parent % = get(0,'CurrentFigure')
+    style  = edit
+    title  = $style$  % displayed on the title field
+    value
+    
+    callback   = 0    % function to call when value changed
+    textWidth  = 100  % size of the title and text box
+\end
+\spinbox : edit
+    style  = spinbox
+    value  = 0        % initial value of the box
+    min    = 0        % minimum allowable value
+    max    = 10000    % maximum allowable value
+    step   = 1        % change of value for each click on the slider
+\end
+
+\slider : spinbox
+    style  = sliderbox
+    max    = 100
+    sliderSize = 200   % height of slider
+    direction  = vertical % direction of the slider
+\end
+
+
+\popup : spinbox
+    style  = popupbox
+    value  = select
+    string = {'select', 'something'}
+\end

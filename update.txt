@@ -1,0 +1,24 @@
+Update done since v1.0 (only internal changes, transparent to the user)
+
+Management of persistent data:
+ - CRDefault.m doc updated
+ - @CRUIbox/createUIbox loads boxes param in CRDefault
+ - CRTool persistent is now stored in CRDefault (and doc updated)
+ 
+pyrLK: add input of initial speed in pyrLK.m:
+ - input 'feature' is either Nx2 for position only (exact same input as before)
+ - or Nx4 for position + init speed  (this feature is for testing only, no garanty to keep it in future release)
+
+formatPath
+ - line 36: ismember replaced by isequal (little optimisation)
+ - correct doc: default filesep is system filesep
+ - correct some bug related to unix full path (starting by '/') but with first argument empty
+
+CRImage 
+ - convert: 
+      * change use of eval by cast
+      * correct bug convertion float to integer
+      * overall optimized
+ - imshow
+      * convert to rgb et *uint8*
+      * remove clamp (implicite in uint8 convertion)

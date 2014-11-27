@@ -1,0 +1,20 @@
+% ------- Default path of toolBox CR -------
+%     *** Should contain structures ***
+
+CRPath        = crPath()                % main path to CR toolBox
+%CRProjectPath = D:/post-doc  % path to store results
+CRProjectPath = $CRPath$/../CRResult    % default path to store results
+
+
+% perso
+videoPath      = D:/data              % default path of input videos
+answer_to_life = 13
+
+%\default_tool
+%    name           
+%    toolFunction   = cr$name$
+%    configFunction = cr$name$_config
+%    configured = false
+%    batchable  = true
+%\end
+

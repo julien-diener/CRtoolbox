@@ -1,0 +1,12 @@
+% Default parameters values of tool crBOD
+%
+% This is only for information, it isnot used by the CRToolbox
+
+precision  = single   % data precision used during computation
+modeNumber = all      % number of modes to compute
+% for flow only:      
+cellSize   = 1        % used to cells position
+outlier    = 0        % replace obvious outlier 
+                      % (when speed is out of mean +/- 'outlier'*std)
+                    
+output.file = bod.mat % save computed bod to file 'bod.mat'

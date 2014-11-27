@@ -1,0 +1,9 @@
+The CR-toolbox contains the following external codes:
+
+uitabpanel:
+  Unlicensed code downloaded from mathworks.com
+  Author: Shiying Zhao (zhao@arch.umsl.edu)
+  
+GridBagLayout (and GridBagConstraints):
+  Refactor code under BSD license downloaded from mathworks.com
+  Author: Jason www.mathworks.com/matlabcentral/fileexchange/authors/45863
