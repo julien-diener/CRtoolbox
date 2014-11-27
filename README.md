@@ -8,8 +8,6 @@ In particular, this toolbox contains the following features:
  - A player to display all results
  - A full set of user interfaces
 
-The matlab image processing toolbox is not required if MatPIV is not used (optical flow using image correlation).
-
 ###License
 
 The CR-toolbox is released under the open-source [CeCILL-B  license](http://www.cecill.info/licences.en.html). It is a BSD-like license under french law.
