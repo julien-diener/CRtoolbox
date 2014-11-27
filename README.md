@@ -5,7 +5,6 @@ In particular, this toolbox contains the following features:
  - KLT feature tracker (Tomasi-Kanade feature detector & Lucas-Kanade tracking)
  - Optical flow from either KLT or image correlation (using the additional MatPIV toolbox)
  - Bi-Orthogonal Decomposition of optical flow or tracked features
-Management tools for image sequences and avi files
  - A player to display all results
  - A full set of user interfaces
 
