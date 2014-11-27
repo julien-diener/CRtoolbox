@@ -12,12 +12,20 @@ In particular, this toolbox contains the following features:
 
 The CR-toolbox is released under the open-source [CeCILL-B  license](http://www.cecill.info/licences.en.html). It is a BSD-like license under french law.
 
-The license text is in the [CR/Licence-en.txt file](CR/Licence-en.txt).
+The license text is in the [CR/Licence-en.txt](CR/Licence-en.txt) file.
+
+If you are publishing a scientific works that have use this toolbox, you should cite the following paper:
+
+[BARBACCI, A., DIENER, J., HÉMON, P., ADAM, B., DONÈS, N., REVERET, L., MOULIA, B. 2014
+A robust videogrametric method for the velocimetry of wind-induced motion in trees. Agricultural and Forest Meteorology 184 :.220 - 229](http://www.sciencedirect.com/science/article/pii/S0168192313002712)
+
 
 
 ###Documentation
 
 See the [CR-toolbox documentation website](https://sites.google.com/site/crtoolbox/)
+
+To contact me, the prefered way is to through github issues (link in the menu on the right, a github account is required). Otherwise you can send me an [email](mailto:crtoolbox_AT_gmail_DOT_com)
 
 
 ###Project
