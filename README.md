@@ -25,7 +25,7 @@ A robust videogrametric method for the velocimetry of wind-induced motion in tre
 
 See the [CR-toolbox documentation website](https://sites.google.com/site/crtoolbox/)
 
-To contact me, the prefered way is to through github issues (link in the menu on the right, a github account is required). Otherwise you can send me an [email](mailto:crtoolbox_AT_gmail_DOT_com)
+To contact me, the prefered way is to through [github issues](https://github.com/julien-diener/CRtoolbox/issues)(a github account is required). Otherwise you can send me an [email](mailto:crtoolbox_AT_gmail_DOT_com).
 
 
 ###Project
