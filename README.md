@@ -27,9 +27,9 @@ See the [CR-toolbox documentation website](https://sites.google.com/site/crtoolb
 
 This toolbox has been developped in a collaboration between
 
- - [LadHyX](http://www.ladhyx.polytechnique.fr/)
- - [Piaf](http://www6.clermont.inra.fr/piaf) and
- - [Evasion ](http://www-evasion.imag.fr/)
+ - [LadHyX](http://www.ladhyx.polytechnique.fr/) lab of Ecole Polytechnique
+ - [Piaf](http://www6.clermont.inra.fr/piaf) team of INRA
+ - [Evasion ](http://www-evasion.imag.fr/) team of INRIA
 
 It was founded by the [ANR research project Chêne-Roseau](http://www.agence-nationale-recherche.fr/projet-anr/?tx_lwmsuivibilan_pi2%5BCODE%5D=ANR-06-BLAN-0210)  
 
