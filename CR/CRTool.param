@@ -1,0 +1,83 @@
+% List all CRTools
+%
+% CRProject can use any tool defined by a structure containing 
+%  - 'name'          use to identify a tool
+%  - 'toolFunction': name of the function to call (without .m)
+%  - 'input':        a structure of all input necessary
+%  - 'output':       will store results of toolFunction in fields
+%                    with names indicated by the cells of output.name
+%
+%  It can also contains the fields:
+%  - 'parameters':     a default set of parameters
+%  - 'configFunction': name of GUI function that allows manual
+%                      configuration of the tool parameters.
+%
+% the functions should be callable as
+%     toolFunction(input,parameters,output)
+%     configFunction(input,parameters)
+% where all 'input', 'parameters' and 'output' are CRParam objects
+%
+% If data computed by the tool need to be stored on the hard disk,
+% it should store them in output.path or in some of its subdirectory.
+
+
+% template field, only used to generate the CR tool
+% it is removed from this structure when loaded
+\template default_tool  
+    name           
+    toolFunction   = cr$name$
+    configFunction = cr$name$_config
+%    configured = false
+%    batchable  = true
+\end
+
+% ------ to create mask ------
+\Mask : default_tool
+    name = Mask
+    configFunction     % no configuration function for Mask
+    input.video = video
+    \parameters : crMask.param
+        output.name = {'mask'}
+    \end
+    configured = true
+    batchable  = false
+\end
+
+% ------ to extract video motion data ------
+\PIV : default_tool
+    name = PIV
+    input.video = video
+    input.mask  = mask
+    \parameters : crPIV.param
+        output.name = {'PIV_uFlow' 'PIV_vFlow'}
+    \end
+\end
+\KLT_tracking : default_tool
+    name = KLT
+    input.video = video
+    input.mask  = mask
+    \parameters : crKLT_tracking.param
+        output.name = {'tracking'}
+    \end
+\end
+\KLT_flow : default_tool
+    name = KLT
+    input.video = video
+    input.mask  = mask
+    \parameters : crKLT_flow.param
+        output.name = {'KLT_uFlow' 'KLT_vFlow'}
+    \end
+\end
+
+% ----- to compute bi-orthogonal decomposition -----
+\BOD : default_tool
+    name = BOD
+    configFunction
+    input.tracking = tracking   % can be run on either a tracking sequence
+    input.uFlow    = KLT_uFlow  % or the u & v flow sequences
+    input.vFlow    = KLT_vFlow  %
+    \parameters
+        output.file = bod.mat
+        output.name = {'bod'}  % return a bod structure (see help crBOD)
+    \end
+\end

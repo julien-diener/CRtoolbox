@@ -1,0 +1,18 @@
+% default CRProject parameters
+% if changed, reset CRDefault with "CRDefault(0)", or restart matlab
+
+name = tmp
+path = $CRProjectPath$/tmp
+\video < CRData
+    type             % empty type means it is not ready
+    inputFile  = pwd()
+    length     = 0
+    start      = 1
+    readLength = 25  % for avi videos
+    data             % the actual video will be stored there
+\end
+
+batch
+
+tool = CRTool()
+

@@ -1,0 +1,13 @@
+% Default parameters values of CRTool Mask
+%
+% This Tool allows to make a mask for a video
+
+threshold = 0.25 % threshold to segment the variance mask
+
+% Save computed masks to files (in directory 'video.resultPath')
+\output
+    maskFile   = mask.png        % to store the computed mask
+    stdFile    = video_var.png   % to store the variance of video pixel color
+\end
+
+

@@ -12,7 +12,7 @@ In particular, this toolbox contains the following features:
 
 The CR-toolbox is released under the open-source [CeCILL-B  license](http://www.cecill.info/licences.en.html). It is a BSD-like license under french law.
 
-The license text is in the [CR/Licence-en.txt file](CR/Licence-en.txt).
+The license text is in the [Licence-en.txt file](Licence-en.txt).
 
 
 ###Documentation

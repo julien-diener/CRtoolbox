@@ -1,0 +1,17 @@
+% Default values of PIV parameters
+% 
+% CRTool PIV uses the free toolBox MatPIV
+% It should be installed and included in matlab path
+
+winSize  =  16      % Diameter of matching window
+overlap  =  0.5     % percentage of overlapping of matching window
+
+method     = single % multin % MatPIV method to use
+dt         = 1               % Time between 2 images (typically in second)
+
+\output
+    path = PIV                          % path where to store the computed flow
+    file = {'uFlow_0001', 'vFlow_0001'} % file names of their 1st image 
+\end
+%filter % list of filter to apply to the estimated flow ***NOT IMPLEMENTED***  
+        % use method = multin, it filters the computed flow
